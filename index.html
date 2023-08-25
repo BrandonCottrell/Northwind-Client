@@ -28,14 +28,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-database"></i>
                         Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="productDropdown">
-                        <a class="dropdown-item" href="#">Browse Categories</a>
-                        <a class="dropdown-item" href="#">Product Search</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-table"></i> Browse Categories</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-magnifying-glass"></i> Product Search</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Current Discounts</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-piggy-bank"></i> Current Discounts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="customerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-users"></i>
+                        Customers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="productDropdown">
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-user"></i> Account</a>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-user-plus"></i> Register</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
                     </div>
                 </li>
             </ul>
@@ -45,8 +56,14 @@
             </form>
         </div>
     </nav>
-    <div class="container">
-        Hello World!
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 class="display-4">Northwind</h1>
+            <p class="lead">We have the best prices and selection of high quality foods & beverages on the planet! Check out our featured discounts below.</p>
+            <hr class="my-4">
+            <p>For spectacular international quisuine, look no further.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Order Now >></a>
+          </div>
     </div>
 
     <!--bootstrap js -->
