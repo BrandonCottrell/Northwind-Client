@@ -20,7 +20,7 @@ $(function(){
 
     $('#select-all').on('change', allBalloons())
 
-    changeColors();
+    changeColors(); 
 });
 
 // change happy birthday animation
