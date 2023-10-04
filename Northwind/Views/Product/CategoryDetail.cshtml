@@ -1,0 +1,21 @@
+@model ProductViewModel
+
+<div class="bg-primary m-1 p-1 text-white"><h4>@Model.category.CategoryName Details</h4></div>
+
+@if (Model.Products.Count() == 0)
+{
+  <p>There are no products</p>
+}
+else
+{
+  <ul>
+    @foreach (Product product in Model.Products)
+    {
+      <li>
+        @(product.ProductName)
+      </li>
+    }
+  </ul>
+}
+
+<hr />
