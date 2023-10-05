@@ -8,14 +8,34 @@
 }
 else
 {
-  <ul>
-    @foreach (Product product in Model.Products)
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product Name</th>
+      <th scope="col">Unit Price</th>
+      <th scope="col">Units in Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach (Product product in Model.Products)
     {
-      <li>
-        @(product.ProductName)
-      </li>
+      <tr>
+      <td>@product.ProductName</td>
+      <td>@("$" + product.UnitPrice)</td>
+      <td>@product.UnitsInStock</td>
+    </tr>
     }
-  </ul>
+    
+  </tbody>
+</table>
+  // <ul>
+  //  @foreach (Product product in Model.Products)
+  //  {
+  //    <li>
+  //      @(product.ProductName + " " + product.ProductId)
+  //    </li>
+  //  }
+  //</ul>
 }
 
 <hr />

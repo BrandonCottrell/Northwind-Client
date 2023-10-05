@@ -1,10 +1,41 @@
-@model IEnumerable<Category>
+@model ProductViewModel
 
-<h2>Product Categories</h2>
-<ul>
-  @foreach (Category category in Model)
-  {
-    <li><a asp-action="CategoryDetail" asp-route-id="@category.CategoryId">@category.CategoryName</a></li>
-  }
-  
-</ul>
+<div class="bg-primary m-1 p-1 text-white"><h4>@Model.category.CategoryName Details</h4></div>
+
+@if (Model.Products.Count() == 0)
+{
+  <p>There are no products</p>
+}
+else
+{
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Product Name</th>
+      <th scope="col">Unit Price</th>
+      <th scope="col">Units in Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach (Product product in Model.Products)
+    {
+      <tr>
+      <td>@product.ProductName</td>
+      <td>@("$" + product.UnitPrice)</td>
+      <td>@product.UnitsInStock</td>
+    </tr>
+    }
+    
+  </tbody>
+</table>
+  // <ul>
+  //  @foreach (Product product in Model.Products)
+  //  {
+  //    <li>
+  //      @(product.ProductName + " " + product.ProductId)
+  //    </li>
+  //  }
+  //</ul>
+}
+
+<hr />

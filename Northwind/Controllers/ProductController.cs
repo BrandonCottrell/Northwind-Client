@@ -8,11 +8,11 @@ public class ProductController : Controller
 
   public IActionResult Category() => View(_dataContext.Categories);
 
-  public IActionResult CategoryDetail(int id) => View(new ProductViewModel
+  public IActionResult Index(int id) => View(new ProductViewModel
   {
     category = _dataContext.Categories.FirstOrDefault(b => b.CategoryId == id),
     Products = _dataContext.Productss.Where(p => p.CategoryId == id && !p.Discontinued).OrderBy(p => p.ProductName)
   });
 
-  public IActionResult Index() => View(_dataContext.Categories);
+  // public IActionResult Index() => View(_dataContext.Categories);
 }

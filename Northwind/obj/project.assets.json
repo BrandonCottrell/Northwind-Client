@@ -2017,11 +2017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brand\\OneDrive\\Desktop\\.NetWeb\\Northwind-Client\\Northwind\\Northwind.csproj",
+      "projectUniqueName": "C:\\Users\\brand\\Desktop\\Dot Net\\Northwind-Client\\Northwind\\Northwind.csproj",
       "projectName": "Northwind",
-      "projectPath": "C:\\Users\\brand\\OneDrive\\Desktop\\.NetWeb\\Northwind-Client\\Northwind\\Northwind.csproj",
+      "projectPath": "C:\\Users\\brand\\Desktop\\Dot Net\\Northwind-Client\\Northwind\\Northwind.csproj",
       "packagesPath": "C:\\Users\\brand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brand\\OneDrive\\Desktop\\.NetWeb\\Northwind-Client\\Northwind\\obj\\",
+      "outputPath": "C:\\Users\\brand\\Desktop\\Dot Net\\Northwind-Client\\Northwind\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\brand\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2080,7 +2080,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
